@@ -99,10 +99,7 @@ namespace LinkedList.Implementation
 
             public void Reset()
             {
-                while (currentNode.Previous != null)
-                {
-                    currentNode = currentNode.Previous;
-                }
+                currentNode = null;
             }
         }
     }
