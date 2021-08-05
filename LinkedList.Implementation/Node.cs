@@ -58,11 +58,11 @@ namespace LinkedList.Implementation
 
         public void Reverse()
         {
-            var oldPrevious = Previous;
-            var oldNext = Next;
+            var stalePrevious = Previous;
+            var staleNext = Next;
 
-            Previous = oldNext;
-            Next = oldPrevious;
+            Previous = staleNext;
+            Next = stalePrevious;
         }
     }
 }
